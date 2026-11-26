@@ -140,6 +140,11 @@ footer p{color:var(--mute);font-size:.9rem}
 .toast{position:fixed;bottom:24px;inset-inline:0;margin:auto;width:max-content;max-width:90%;background:var(--ink);color:#fff;padding:10px 20px;border-radius:99px;font-size:.9rem;opacity:0;translate:0 20px;transition:.3s;z-index:60;pointer-events:none}
 .toast.on{opacity:1;translate:none}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .reveal{opacity:1;translate:none}}
+
+
+
+
+
 </style>
 </head>
 <body>
@@ -152,14 +157,15 @@ footer p{color:var(--mute);font-size:.9rem}
 <button class="pill" id="burger" aria-label="Menu">☰</button>
 </div></div></header>
 <main>
-<section id="home" class="hero"><span class="blob b1"></span><span class="blob b2"></span><div class="wrap"><h1 data-i="heroTitle"></h1><p data-i="heroText"></p><div class="cta"><a class="btn" href="#products" data-i="shop"></a><a class="btn ghost" href="#offers" data-i="exploreOffers"></a></div></div></section>
-<section id="offers" class="band"><div class="wrap"><h2 data-i="offersT"></h2><p class="sub" data-i="offersS"></p><div class="grid" id="gOffers"></div></div></section>
-<section id="colors"><div class="wrap"><h2 data-i="colorsT"></h2><p class="sub" data-i="colorsS"></p><div class="grid" id="gColors"></div></div></section>
+<section  id="home" class="hero"><span class="blob b1"></span><span class="blob b2"></span><div class="wrap"><h1 data-i="heroTitle"></h1><p data-i="heroText"></p><div class="cta"><a class="btn" href="#products" data-i="shop"></a><a class="btn ghost" href="#offers" data-i="exploreOffers"></a></div></div></section>
+<section  id="offers" class="band"><div class="wrap"><h2 data-i="offersT"></h2><p class="sub" data-i="offersS"></p><div class="grid" id="gOffers"></div></div></section>
+<section  id="colors"><div class="wrap"><h2 data-i="colorsT"></h2><p class="sub" data-i="colorsS"></p><div class="grid" id="gColors"></div></div></section>
 <section id="books" class="band"><div class="wrap"><h2 data-i="booksT"></h2><p class="sub" data-i="booksS"></p><div class="grid" id="gBooks"></div></div></section>
-<section id="products"><div class="wrap"><h2 data-i="allT"></h2>
-<div class="bar"><input id="q" type="search" data-ip="search" aria-label="Search"><select id="sort" aria-label="Sort"><option value="new" data-i="sortNew"></option><option value="low" data-i="sortLow"></option><option value="high" data-i="sortHigh"></option></select></div>
+<section  id="products"><div class="wrap"><h2 data-i="allT"></h2>
+<div  class="bar"><input id="q" type="search" data-ip="search" aria-label="Search"><select id="sort" aria-label="Sort"><option value="new" data-i="sortNew"></option><option value="low" data-i="sortLow"></option><option value="high" data-i="sortHigh"></option></select></div>
 <div class="chips" id="chips"></div><div class="grid" id="gAll"></div><div class="center"><button class="btn ghost" id="more" data-i="more"></button></div></div></section>
 <section id="pay" class="band"><div class="wrap"><h2 data-i="payT"></h2><p class="sub" data-i="payS"></p><div class="pays"><div><em>💵</em><b data-i="cod"></b></div><div><em>📲</em><b>InstaPay</b></div><div><em>📱</em><b>Vodafone Cash</b></div></div><p class="note" data-i="payNote"></p></div></section>
+
 </main>
 <footer><div class="wrap fg">
 <div><a class="logo" href="#home" aria-label="Shams"></a><p data-i="fDesc"></p></div>
@@ -172,6 +178,8 @@ footer p{color:var(--mute);font-size:.9rem}
 <aside class="drawer" id="drawer" aria-label="Cart"><div class="dh"><h3 data-i="cart"></h3><button id="cClose" aria-label="Close">✕</button></div><div class="itemsBox" id="itemsBox"></div><div class="sum" id="sum"></div></aside>
 <div class="modal" id="modal" role="dialog" aria-modal="true"><div class="mbox" id="mbox"></div></div>
 <div class="toast" id="toast" role="status"></div>
+
+
 <script>
 /* ===== EDIT ME: accounts, shipping, default language ===== */
 const CONFIG={whatsapp:"201064845771",messengerUrl:"https://m.me/YOUR_PAGE_USERNAME",facebookUrl:"https://facebook.com/YOUR_PAGE",instagramUrl:"https://instagram.com/YOUR_PROFILE",shipping:70,defaultLang:"ar",pageSize:8};
@@ -209,7 +217,43 @@ additionalImages: [IMG + "COLORIGN-BOOK-COZY-MOMENTS/cozy-moments2.jpg", IMG + "
 isOffer: true,
 isFeatured: true,
 stock: 20 
-}
+},
+
+
+{ 
+id: 3,
+nameEn: "Women Glitter Fur Bear Keychain - Silver",
+nameAr: "ميدالية مفاتيح - دب فضي",
+descriptionEn: "Product Dimensions ‏ : ‎ 17 x 10 x 3 cm; 20 g",
+descriptionAr: "ابعاد المنتج: 17 x 10 x 3cm -- وزن المنتج 20 g",
+price: 150,
+originalPrice: 200,
+category: "tools",
+image: IMG + "Keychain/Bear-Keychain1.jpg",
+additionalImages: [IMG + "Keychain/Bear-Keychain2.jpg", IMG + "Keychain/Bear-Keychain3.jpg"],
+isOffer: true,
+isFeatured: true,
+stock: 20 
+},
+
+
+
+{ 
+id: 4,
+nameEn: "Bracelet Making Kit",
+nameAr: "طقم متكامل لصناعة الأساور والعقود",
+descriptionEn: "Create your own colorful bracelets! A complete DIY jewelry-making kit packed with colorful beads, charms, letters and everything you need to get creative.",
+descriptionAr: "اصنعي إكسسواراتك بنفسك! طقم متكامل لصناعة الأساور والعقود باستخدام الخرز الملون والحروف والأشكال اللطيفة، مع كل الأدوات اللي هتحتاجيها للإبداع.",
+price: 300,
+originalPrice: 360,
+category: "tools",
+image: IMG + "Bracelet-Kit/Bracelet-Kit1.jpg",
+additionalImages: [IMG + "Bracelet-Kit/Bracelet-Kit2.jpg", IMG  + "Bracelet-Kit/Bracelet-Kit3.png"],
+isOffer: true,
+isFeatured: true,
+stock: 20 
+},
+
 ];
 /*const P=[
 {id:1,nameEn:"Colored Pencils – 24 Colors",nameAr:"أقلام تلوين – ٢٤ لونًا",descriptionEn:"Smooth, vibrant pencils for coloring and sketching.",descriptionAr:"أقلام ناعمة بألوان زاهية للتلوين والرسم.",price:120,originalPrice:150,category:"pencils",image:IMG+"colored-pencils-24.jpg",additionalImages:[IMG+"colored-pencils-24-2.jpg",IMG+"colored-pencils-24-3.jpg"],isOffer:true,isFeatured:true,stock:20},
